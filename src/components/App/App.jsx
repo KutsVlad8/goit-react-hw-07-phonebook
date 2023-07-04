@@ -8,9 +8,9 @@ import {
   Template,
 } from './App.styled';
 
-import { ContactFormRedux } from '../ContactForm/ContactForm';
-import { ContactsListRedux } from '../ContactList/ContactsList';
-import { FilterRedux } from '../Filter/Filter';
+import { ContactFormRedux } from 'components/ContactForm/ContactForm';
+import { ContactsListRedux } from 'components/ContactList/ContactsList';
+import { FilterRedux } from 'components/Filter/Filter';
 import { getContacts } from 'redux/selectors';
 import { useSelector } from 'react-redux';
 // import Footer from 'components/Footer/Footer';
