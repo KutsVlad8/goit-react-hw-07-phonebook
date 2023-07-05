@@ -10,7 +10,7 @@ export const Input = Styled.input`
 display: block;
 width: 350px;
 height: 30px;
-margin-bottom: 10px;
+margin-bottom: 20px;
 margin-left: auto;
 margin-right: auto;
 border: none;
