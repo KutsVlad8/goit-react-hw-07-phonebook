@@ -15,6 +15,8 @@ import {
   Template,
 } from './App.styled';
 
+import { Loader } from '../Loader/Loader.jsx';
+
 export const App = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
@@ -27,13 +29,15 @@ export const App = () => {
 
   return (
     <>
-      {isLoading && <b>Loading tasks...</b>}
-      {error && <b>{error}</b>}
+      {isLoading && !error && <Loader />}
       <Head>PhoneBook</Head>
       <Container>
         <FormContainer>
           <ContactFormRedux />
         </FormContainer>
+
+        {isLoading && <Loader />}
+        {error && <b>{error}</b>}
 
         {contacts.length > 0 ? (
           <LeftContainer>

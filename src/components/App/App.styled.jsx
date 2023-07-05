@@ -35,6 +35,7 @@ export const LeftContainer = Styled.div`
 width: 400px;
 border: 1px solid #1f76c1;
 padding: 10px;
+margin-bottom: 50px;
 border-radius: 5px;
 box-shadow: rgb(26 25 24 / 50%) 2px 2px 5px 2px;
 `;
